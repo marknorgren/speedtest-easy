@@ -160,6 +160,10 @@
                 $('#day')
                     .append($('<option>', { value : i }).text(i));
             }
+            // Select current day
+            var d = new Date();
+            var today = d.getDate();
+            $('#day').val(today);
         });
     }
 
